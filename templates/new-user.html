@@ -6,11 +6,14 @@
 </head>
 
 <body>
-    <h1>Crear nuevo usuario de la EPS</h1>
+    <h1>Crear nuevo usuario de la Tarjeta de Credito</h1>
     <p>
         Ingrese los datos del usuario que desea crear
     </p>
-    <form action="/view/save-user">
+    <form action="/crear-usuario">
+        <div>
+            Cédula: <input type="text" name="cedula" />
+        </div>
         <div>
             Nombre: <input type="text" name="nombre" />
         </div>
@@ -18,7 +21,13 @@
             Apellido: <input type="text" name="apellido" />
         </div>
         <div>
-            Fecha Nacimiento: <input type="number" name="fecha_nacimiento" />
+            Direccion: <input type="text" name="direccion" />
+        </div>
+        <div>
+            Teléfono: <input type="text" name="telefono" />
+        </div>
+        <div>
+            Correo: <input type="email" name="correo" />
         </div>
         <div>
             Departamento: <select name="codigo_departamento">
@@ -26,6 +35,9 @@
                 <option value="11">Bogotá</option>
                 <option value="76">Valle del Cauca</option>
             </select>
+        </div>
+        <div>
+            Codigo Municipio: <input type="text" name="codigo_municipio" />
         </div>
         <input type="submit" value="Guardar" />
     </form>

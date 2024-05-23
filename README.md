@@ -4,6 +4,8 @@ Aplicación de Registro de Usuarios, con Interfaz de Usuario en HTML, conectada 
 ## Enlaces utiles
 
 https://httpbin.org/forms/post
+
 https://htmlreference.io/
+
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Cheatsheet
 

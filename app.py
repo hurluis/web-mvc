@@ -23,10 +23,18 @@ def buscar_usuario():
    usuario = ControladorUsuarios.BuscarPorCedula(cedula)
    return render_template("usuario.html", user = usuario )
 
+@app.route("/nuevo-usuario")
+def formulario_nuevo_usuario():
+   return render_template("new-user.html")
+
 @app.route("/crear-usuario")
 def crear_usuario():
    cedula = request.args["cedula"]
-   usuario_prueba = Usuario( cedula, "Usuario", "Prueba", "no@tiene.correo", "EN la calle", "99999", "05", "05001"  ) 
+   nombre=request.args["nombre"]
+   apellido=request.args["apellido"]
+   usuario_prueba = Usuario( cedula=cedula, nombre=nombre, apellido=apellido, correo="no@tiene.correo", 
+                            direccion=request.args["direccion"], telefono=request.args["telefono"], 
+                            codigo_departamento=request.args["codigo_departamento"], codigo_municipio=request.args["codigo_municipio"]  ) 
    ControladorUsuarios.Insertar( usuario_prueba )
    return "Aqui se va a crear un usuario"
 
