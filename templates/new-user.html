@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crear un nuevo usuario</title>
+</head>
+
+<body>
+    <h1>Crear nuevo usuario de la EPS</h1>
+    <p>
+        Ingrese los datos del usuario que desea crear
+    </p>
+    <form action="/view/save-user">
+        <div>
+            Nombre: <input type="text" name="nombre" />
+        </div>
+        <div>
+            Apellido: <input type="text" name="apellido" />
+        </div>
+        <div>
+            Fecha Nacimiento: <input type="number" name="fecha_nacimiento" />
+        </div>
+        <div>
+            Departamento: <select name="codigo_departamento">
+                <option value="05">Antioquia</option>
+                <option value="11">Bogotá</option>
+                <option value="76">Valle del Cauca</option>
+            </select>
+        </div>
+        <input type="submit" value="Guardar" />
+    </form>
+</body>
+
+</html>
