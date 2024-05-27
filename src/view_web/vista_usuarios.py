@@ -11,9 +11,9 @@ import controller.ControladorUsuarios as ControladorUsuarios
 def Home():
    return render_template("index.html")
 
-@blueprint.route( "/nuevo" )
+@blueprint.route( "/new-user" )
 def nuevo():
-   return render_template("new-user.html")
+   return render_template("crear-usuario.html")
 
 @blueprint.route( "/crear-usuario")
 def crear_usuario():
